@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Sobre from "./pages/Sobre";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/sobre" element={<Sobre />}></Route>
+          <Route path="/register" element={<Register />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
