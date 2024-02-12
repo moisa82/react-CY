@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <>
       <section className="w-full h-screen pt-14 bg-white flex justify-center items-center">
-        <form className="rounded-lg drop-shadow-md flex flex-col bg-gray-500 gap-4 w-96 p-14">
+        <form className="-mt-20 rounded-lg drop-shadow-md flex flex-col bg-gray-500 gap-4 w-96 p-14">
           <h1 className="text-white text-4xl text-center">Entrar</h1>
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -45,13 +47,12 @@ const Login = () => {
             id="btn_submit"
             value="Entrar"
           />
-          <input
-            type="submit"
-            name="btn_submit"
-            className="px-6 py-2 cursor-pointer bg-blue-400 rounded-md text-white"
-            id="btn_submit"
-            value="Cadastrar"
-          />
+          <div className="text-white text-base flex justify-center gap-1">
+            <span>Não possui conta?</span>
+            <Link to={"/register"} className="text-blue-300">
+              Cadastre-se
+            </Link>
+          </div>
         </form>
       </section>
     </>

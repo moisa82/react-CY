@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Sobre from "./pages/Sobre";
 import Register from "./pages/Register";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/sobre" element={<Sobre />}></Route>
           <Route path="/register" element={<Register />}></Route>
+          <Route path="/events" element={<Events />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
